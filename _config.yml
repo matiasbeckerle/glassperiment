@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         false
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Glassperiment
+tagline:          'Google Glass Experiment'
+description:      'A Google Glass experiment.'
+url:              https://matiasbeckerle.github.io/glassperiment
+
+author:
+  name:           'Matias Beckerle'
+  url:            https://matias.beckerle.com.ar
+
+paginate:         1
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/matiasbeckerle/glassperiment
