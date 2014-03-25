@@ -1,0 +1,7 @@
+/source/.settings/org.eclipse.jdt.core.prefs
+/source/bin/
+/source/gen/
+
+### OS generated files
+.DS_Store*
+Thumbs.db
