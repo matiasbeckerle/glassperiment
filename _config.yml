@@ -10,6 +10,7 @@ title:            Glassperiment
 tagline:          'Google Glass Experiment'
 description:      'A Google Glass experiment.'
 url:              https://matiasbeckerle.github.io/glassperiment
+baseurl:          https://matiasbeckerle.github.io/glassperiment
 
 author:
   name:           'Matias Beckerle'
