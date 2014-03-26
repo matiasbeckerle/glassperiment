@@ -2,6 +2,10 @@ package com.example.glassperiment;
 
 import java.util.concurrent.TimeUnit;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.os.SystemClock;
@@ -12,7 +16,7 @@ import android.view.View;
 public class HeadlineDrawer implements SurfaceHolder.Callback {
 
 	// The duration, in milliseconds, of one frame
-    private static final long FRAME_TIME_MILLIS = TimeUnit.SECONDS.toMillis(2);
+    private static final long FRAME_TIME_MILLIS = TimeUnit.SECONDS.toMillis(3);
     
     private RenderThread mRenderThread;
 	private SurfaceHolder mHolder;
@@ -104,12 +108,35 @@ public class HeadlineDrawer implements SurfaceHolder.Callback {
 
         @Override
         public void run() {
+        	int position = 0;
+        	int maxPosition = 0;
+        	JSONArray headlines = new JSONArray();
+        	
+        	try {
+            	headlines = new JSONArray("[{\"source\":\"Nulla lobortis\",\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\"moment\":\"ac pulvinar sapien\"},{\"source\":\"Donec\",\"description\":\"Morbi malesuada commodo magna\",\"moment\":\"eleifend ac\"},{\"source\":\"Aliquam sagittis velit\",\"description\":\"Etiam non diam vitae mauris vulputate ultrices\",\"moment\":\"commodo sollicitudin\"},{\"source\":\"Aliquam sagittis velit\",\"description\":\"Praesent tempor ipsum et\",\"moment\":\"commodo sollicitudin\"},{\"source\":\"Donec\",\"description\":\"Sed malesuada orci neque, sed laoreet\",\"moment\":\"ac pulvinar sapien\"}]");
+            	maxPosition = headlines.length() - 1;
+        	} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+        	
             while (shouldRun()) {
             	long frameStart = SystemClock.elapsedRealtime();
                 long frameLength = SystemClock.elapsedRealtime() - frameStart;
-                
-                //Log.v("test", "Glassperimenting..." + String.valueOf(frameStart));
-                mView.updateText("Making Sense", "Glassperimenting... " + String.valueOf(frameStart), "a few seconds ago");
+
+                try {
+					JSONObject headline = headlines.getJSONObject(position);
+					Log.v("test", headline.getString("description"));
+					mView.updateText(
+							headline.getString("source"),
+							headline.getString("description"),
+							headline.getString("moment"));
+					 
+	                position = position == maxPosition ? 0 : ++position;
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
                 
                 long sleepTime = FRAME_TIME_MILLIS - frameLength;
                 if (sleepTime > 0) {
