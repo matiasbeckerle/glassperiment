@@ -9,7 +9,6 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.os.SystemClock;
-import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.View;
 
@@ -17,6 +16,9 @@ public class HeadlineDrawer implements SurfaceHolder.Callback {
 
 	// The duration, in milliseconds, of one frame
     private static final long FRAME_TIME_MILLIS = TimeUnit.SECONDS.toMillis(3);
+    
+    // Hardcoded source of random headlines, just for prototype purposes
+    private static final String HEADLINES_JSON = "[{\"source\":\"New York Times\",\"description\":\"A New Planetoid Reported in Far Reaches of Solar System\",\"moment\":\"a month ago\"},{\"source\":\"BBC\",\"description\":\"Will we ever... travel in wormholes?\",\"moment\":\"two weeks ago\"},{\"source\":\"Fox News\",\"description\":\"Google teams up with maker of Ray-Ban\",\"moment\":\"three days ago\"},{\"source\":\"NBC\",\"description\":\"Early Oculus Rift had Huge Potential\",\"moment\":\"today\"},{\"source\":\"Reuters\",\"description\":\"Nvidia shows off high-end game cards, cloud graphics offerings\",\"moment\":\"an hour ago\"}]";
     
     private RenderThread mRenderThread;
 	private SurfaceHolder mHolder;
@@ -113,7 +115,7 @@ public class HeadlineDrawer implements SurfaceHolder.Callback {
         	JSONArray headlines = new JSONArray();
         	
         	try {
-            	headlines = new JSONArray("[{\"source\":\"Nulla lobortis\",\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\"moment\":\"ac pulvinar sapien\"},{\"source\":\"Donec\",\"description\":\"Morbi malesuada commodo magna\",\"moment\":\"eleifend ac\"},{\"source\":\"Aliquam sagittis velit\",\"description\":\"Etiam non diam vitae mauris vulputate ultrices\",\"moment\":\"commodo sollicitudin\"},{\"source\":\"Aliquam sagittis velit\",\"description\":\"Praesent tempor ipsum et\",\"moment\":\"commodo sollicitudin\"},{\"source\":\"Donec\",\"description\":\"Sed malesuada orci neque, sed laoreet\",\"moment\":\"ac pulvinar sapien\"}]");
+            	headlines = new JSONArray(HEADLINES_JSON);
             	maxPosition = headlines.length() - 1;
         	} catch (JSONException e) {
 				// TODO Auto-generated catch block
@@ -126,7 +128,6 @@ public class HeadlineDrawer implements SurfaceHolder.Callback {
 
                 try {
 					JSONObject headline = headlines.getJSONObject(position);
-					Log.v("test", headline.getString("description"));
 					mView.updateText(
 							headline.getString("source"),
 							headline.getString("description"),
