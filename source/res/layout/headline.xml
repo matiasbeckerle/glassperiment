@@ -6,27 +6,25 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:gravity="center"
         android:padding="@dimen/headline_padding">
         <TextView
             android:id="@+id/source"
        		android:layout_width="fill_parent"
-       		android:layout_height="wrap_content" 
+       		android:layout_height="wrap_content"
        		android:textColor="@color/makingsense"
        		android:textSize="@dimen/headline_source" />
         <TextView
             android:id="@+id/description"
        		android:layout_width="fill_parent"
-       		android:layout_height="wrap_content" 
+       		android:layout_height="@dimen/headline_description_height"
        		android:layout_below="@id/source"
-       		android:textColor="@color/white" 
+       		android:textColor="@color/white"
        		android:textSize="@dimen/headline_description" />
         <TextView
             android:id="@+id/moment"
-       		android:layout_width="wrap_content"
+       		android:layout_width="fill_parent"
        		android:layout_height="wrap_content"
        		android:layout_below="@id/description"
-       		android:layout_alignParentRight="true"
        		android:paddingTop="@dimen/headline_padding"
        		android:textColor="@color/white" 
        		android:textSize="@dimen/headline_moment" />
