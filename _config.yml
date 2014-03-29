@@ -9,7 +9,6 @@ permalink:        pretty
 title:            Glassperiment
 tagline:          'Google Glass Experiment'
 description:      'A Google Glass experiment.'
-url:              https://matiasbeckerle.github.io/glassperiment
 baseurl:          https://matiasbeckerle.github.io/glassperiment
 
 author:
@@ -19,7 +18,7 @@ author:
 paginate:         1
 
 # Custom vars
-version:          1.0.0
+version:          0.5
 
 github:
   repo:           https://github.com/matiasbeckerle/glassperiment
