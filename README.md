@@ -1,4 +1,6 @@
-glassperiment
+Glassperiment
 =============
 
-Google Glass Experiment
+A Google Glass experiment.
+
+*v0.5*
