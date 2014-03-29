@@ -2,31 +2,36 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/black" >
+
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:padding="@dimen/headline_padding">
+        android:padding="@dimen/headline_padding" >
+
         <TextView
             android:id="@+id/source"
-       		android:layout_width="fill_parent"
-       		android:layout_height="wrap_content"
-       		android:textColor="@color/makingsense"
-       		android:textSize="@dimen/headline_source" />
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/makingsense"
+            android:textSize="@dimen/headline_source" />
+
         <TextView
             android:id="@+id/description"
-       		android:layout_width="fill_parent"
-       		android:layout_height="@dimen/headline_description_height"
-       		android:layout_below="@id/source"
-       		android:textColor="@color/white"
-       		android:textSize="@dimen/headline_description" />
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/headline_description_height"
+            android:layout_below="@id/source"
+            android:textColor="@color/white"
+            android:textSize="@dimen/headline_description" />
+
         <TextView
             android:id="@+id/moment"
-       		android:layout_width="fill_parent"
-       		android:layout_height="wrap_content"
-       		android:layout_below="@id/description"
-       		android:paddingTop="@dimen/headline_padding"
-       		android:textColor="@color/white" 
-       		android:textSize="@dimen/headline_moment" />
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:paddingTop="@dimen/headline_padding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/headline_moment" />
     </RelativeLayout>
+
 </FrameLayout>

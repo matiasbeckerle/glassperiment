@@ -13,14 +13,13 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
         <uses-library
             android:name="com.google.android.glass"
             android:required="true" />
 
-        <activity
-            android:name="com.example.glassperiment.MenuActivity">           
+        <activity android:name="com.example.glassperiment.MenuActivity" >
         </activity>
+
         <service
             android:name="com.example.glassperiment.HeadlineService"
             android:enabled="true"
@@ -35,7 +34,6 @@
                 android:name="com.google.android.glass.VoiceTrigger"
                 android:resource="@xml/voice_trigger_start" />
         </service>
-        
     </application>
 
 </manifest>
