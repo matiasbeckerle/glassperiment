@@ -11,7 +11,7 @@ Glassperiment is an opportunity that [Making Sense](http://makingsense.com) gave
 
 ### Breaking news *through the Glass*
 
-Glassperiment, a glassware to display breaking news and let users stay informed any time they want. Interests preferences will be chosen from a catalogue and set through voice triggers. As a result, users will be synced with news filtered by those preferences.
+Glassperiment is a glassware to display breaking news and let users stay informed any time they want. Interests preferences will be chosen from a catalogue and set through voice triggers. As a result, users will be synced with news filtered by those preferences.
 
 ### Scope
 
@@ -25,13 +25,15 @@ Well, I have mixed feelings.
 
 Developing glassware can be tough. If you read my article "[Environment's Jornal]({{ site.baseurl }}/environments-journal)" then you will notice how hard things can be. I found myself without an official documentation (very early state), without community and without an emulator. I mean, come on guys, just give me an emulator at least!
 
-It took me a lot of solving problems to get a *hello making sense* app running on our glasses:
+It took me a lot of solving problems to get even a *hello making sense* app running on our glasses:
 
 ![Hello Making Sense!]({{ site.baseurl }}/public/img/hello-making-sense.jpg)
 
-It is very interesting how you need to think your glassware. The point of view you have to take. That is a very new thing. You only have the voice and some kind of touchpad. Regarding this stuff I found, some are very annoying, like the way you have to connect to a WiFi connection.
+It is very interesting how you need to think your glassware. The point of view you have to take. That is a new thing, really. You only have the voice and some kind of touchpad.
 
-Still I have my doubts. It's strange, you know? You feel like a cyborg or something. Weird. I don't imagine me using the glasses. It is like you are having a dinner with some friends but someone put his cellphone on the table and uses it constantly. You are here, please throw your cellphone through the window. But all your other friends have their cellphones in their pockets, they didn't bother you. With glasses it feels like you are like the first guy. That kind of things still pissing me off.
+Still I have my doubts. I found some things very annoying, like the way you have to connect to a WiFi or how short is the battery life.
+
+It's strange, you know? You feel like a cyborg or something. Weird. Maybe I'm not ready. I don't imagine me using the glasses. It is like you are having a dinner with some friends but someone put his cellphone on the table and uses it constantly. You are here, please throw your cellphone through the window. But all your other friends have their cellphones in their pockets, they didn't bother you. With glasses it feels like you are like the first guy. That kind of things still pissing me off.
 
 ## Download
 
@@ -39,3 +41,7 @@ There you have the latest version and source:
 
 * [v{{ site.version }}]({{ site.github.repo }}/archive/v{{ site.version }}.zip)
 * [GitHub project]({{ site.github.repo }})
+
+## Acknowledgements
+
+The following people helped me throughout the experiment: Rosario, Andrés, Martín, Mariano, Sergio. **Thank you** very much to all.
