@@ -3,36 +3,39 @@ layout: post
 title: Introducing Glassperiment
 ---
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+Glassperiment, as you can infer, is an experimental application for Google Glass.
 
-### Built on Poole
+### Motivation
 
-Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Lanyon here) includes the following:
+Glassperiment is an opportunity that [Making Sense](http://makingsense.com) gave us to get involved with latest technologies about to be launched for consumers on 2014. This is the case of the [Google Glass](http://www.google.com/glass/start/). The purpose of the Glass would be to display the same data for smartphone users but with hands-free style and voice triggered commands.
 
-* Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
+### Breaking news *through the Glass*
 
-### Lanyon features
+Glassperiment, a glassware to display breaking news and let users stay informed any time they want. Interests preferences will be chosen from a catalogue and set through voice triggers. As a result, users will be synced with news filtered by those preferences.
 
-In addition to the features of Poole, Lanyon adds the following:
+### Scope
 
-* Toggleable sliding sidebar (built with only CSS) via **☰** link in top corner
-* Sidebar includes support for textual modules and a dynamically generated navigation with active link support
-* Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes
-* [Eight optional color schemes](https://github.com/poole/lanyon#themes), available via `<body>` classes
+The project itself lasted two months, between February-March 2014. Started as a two-people team ([@rochimensi](https://github.com/rochimensi), [@matiasbeckerle](https://github.com/matiasbeckerle)) defining requirements, the idea and the whole concept. Unfortunately, due to lack of time Rosario had to leave the project.
 
-[Head to the readme](https://github.com/poole/lanyon#readme) to learn more.
+I continued since there and I came to the end with a prototype of what could be a glassware to display breaking news. Obiously, I didn't had time enought to complete everything to make a real world glassware but what I did raises a good foundation.
 
-### Browser support
+### Conclusion
 
-Lanyon is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.
+Well, I have mixed feelings.
 
-### Download
+Developing glassware can be tough. If you read my article "[Environment's Jornal]({{ site.baseurl }}/environments-journal)" then you will notice how hard things can be. I found myself without an official documentation (very early state), without community and without an emulator. I mean, come on guys, just give me an emulator at least!
 
-Lanyon is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/lanyon">GitHub repository</a> for downloads, bug reports, and features requests.
+It took me a lot of solving problems to get a *hello making sense* app running on our glasses:
 
-Thanks!
+![Hello Making Sense!]({{ site.baseurl }}/public/img/hello-making-sense.jpg)
+
+It is very interesting how you need to think your glassware. The point of view you have to take. That is a very new thing. You only have the voice and some kind of touchpad. Regarding this stuff I found, some are very annoying, like the way you have to connect to a WiFi connection.
+
+Still I have my doubts. It's strange, you know? You feel like a cyborg or something. Weird. I don't imagine me using the glasses. It is like you are having a dinner with some friends but someone put his cellphone on the table and uses it constantly. You are here, please throw your cellphone through the window. But all your other friends have their cellphones in their pockets, they didn't bother you. With glasses it feels like you are like the first guy. That kind of things still pissing me off.
+
+## Download
+
+There you have the latest version and source:
+
+* [v{{ site.version }}]({{ site.github.repo }}/archive/v{{ site.version }}.zip)
+* [GitHub project]({{ site.github.repo }})
