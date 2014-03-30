@@ -19,11 +19,19 @@ The project itself lasted two months, between February-March 2014. Started as a 
 
 I continued since there and I came to the end with a prototype of what could be a glassware to display breaking news. Obiously, I didn't had time enought to complete everything to make a real world glassware but what I did raises a good foundation.
 
+### Development
+
+I have written some articles that you may find interesting if you go through a glassware development:
+
+* [Environment's Journal]({{ site.baseurl }}/environments-journal)
+* [Device advices]({{ site.baseurl }}/device-advices)
+* [The backbone]({{ site.baseurl }}/the-backbone)
+
 ### Conclusion
 
 Well, I have mixed feelings.
 
-Developing glassware can be tough. If you read my article "[Environment's Jornal]({{ site.baseurl }}/environments-journal)" then you will notice how hard things can be. I found myself without an official documentation (very early state), without community and without an emulator. I mean, come on guys, just give me an emulator at least!
+Developing glassware can be tough. If you read my article "[Environment's Journal]({{ site.baseurl }}/environments-journal)" then you will notice how hard things can be. I found myself without an official documentation (very early state), without community and without an emulator. I mean, come on guys, just give me an emulator at least!
 
 It took me a lot of solving problems to get even a *hello making sense* app running on our glasses:
 
