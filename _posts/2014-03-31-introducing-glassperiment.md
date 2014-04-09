@@ -43,6 +43,8 @@ Still I have my doubts. I found some things very annoying, like the way you have
 
 It's strange, you know? You feel like a cyborg or something. Weird. Maybe I'm not ready. I don't imagine me using the glasses. It is like you are having a dinner with some friends but someone put his cellphone on the table and uses it constantly. You are here, please throw your cellphone through the window. But all your other friends have their cellphones in their pockets, they didn't bother you. With glasses it feels like you are like the first guy. That kind of things still pissing me off.
 
+In the other hand, the Glass could have a very powerful impact in some professions. Think how useful it would be for a surgeon.
+
 ## Screenshots
 
 Do you want to know how it looks? Check [screenshots page]({{ site.baseurl }}/screenshots).
