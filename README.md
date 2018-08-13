@@ -1,6 +1,6 @@
 # Glassperiment
 
-A Google Glass experiment - *v0.5*
+An experiment made for Google Glass devices.
 
 ### Info & documentation
 
